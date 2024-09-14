@@ -41,8 +41,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'myapp',
+    'security'
 ]
 
+AUTH_USER_MODEL = 'security.MyUser'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
